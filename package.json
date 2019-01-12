@@ -1,0 +1,29 @@
+{
+  "name": "tweedr",
+  "version": "1.0.0",
+  "description": "A tweeding app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm run start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kauvia/tweedr.git"
+  },
+  "author": "kauvia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kauvia/tweedr/issues"
+  },
+  "homepage": "https://github.com/kauvia/tweedr#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "pg": "^7.8.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.42.0"
+  }
+}
